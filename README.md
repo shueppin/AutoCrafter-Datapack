@@ -3,8 +3,8 @@
 This is a minecraft datapack which creates a block, that automatically crafts certain items.  
 The item that should be crafted can be inserted in a simple GUI. the ingredients for the item can be put into the autocrafter block using a hopper. The output item can   be taken out of the autocrafter using a hopper or a hopper minecart
 
-At the moment it isn't possible to craft every item. More items will be added somewhen. It is also possible to add <a href='https://github.com/shueppin/AutoCrafter-Datapack#autocrafter#how-to-add-your-own-recipes'>your own crafting recipes</a>.  
-Go <a href='autocrafter/craftable_items.txt'>here</a> for a list of all craftable items.
+At the moment it isn't possible to craft every item. More items will be added somewhen. It is also possible to add <a href='https://github.com/shueppin/AutoCrafter-Datapack#how-to-add-your-own-recipes'>your own crafting recipes</a>.  
+Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
 
 
 
@@ -95,7 +95,7 @@ Instead of the `minecraft:` in front of the item names the name of the mod shoul
 **Adding the file to the AutoCrafter**
 
 1. Open the file `AutoCrafter/data/autocrafter/functions/get_item_to_craft.mcfunction`.
-2. Copy the following line into the opened file. It is recommended to put the line into the area marked with `/--------\\` and `\\--------/`. In the file is also a comment to see where to put the line (the comment is marked with an arrow).
+2. Copy the following line into the opened file. It is recommended to put the line into the area marked with `/----------\` and `\----------/`. In the file is also a comment to see where to put the line (the comment is marked with an arrow).
 
 ```mcfunction
 execute if entity @s[nbt={Items:[{Slot:2b, id:"minecraft:output_item"}]}] store success score @s can_craft_item run function autocrafter:crafting/recipes/filename
