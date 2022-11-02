@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "D",
+        "T",
+        "C"
+    ],
+    "key": {
+        "T": {
+            "item": "minecraft:crafting_table"
+        },
+        "D": {
+            "item": "minecraft:dropper"
+        },
+        "C": {
+            "item": "minecraft:chest"
+        }
+    },
+    "result": {"item": "minecraft:knowledge_book"}
+}

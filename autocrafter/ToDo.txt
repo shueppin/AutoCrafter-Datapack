@@ -1,0 +1,9 @@
+AutoCrafter
+
+- evtl. schedule in tick entfernen und dafür tick.json machen (wie bei anderen datapacks)
+- Zeitabstand des Effekts fürs lama von 10s auf 5-7s kürzen
+- Bei Rechtsklick aufs lama Daten in den Chat schreiben:
+	- Item, welches hergestellt wird
+	- Ob es möglich ist, dieses item herzustellen
+	- Ob ein Falsches Item in einem Falschen slot des Lamas ist
+- Invis für Lama

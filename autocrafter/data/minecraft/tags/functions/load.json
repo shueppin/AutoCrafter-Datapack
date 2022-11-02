@@ -1,0 +1,6 @@
+{
+    "values":[
+        "autocrafter:_load", 
+        "autocrafter:_tick"
+    ]
+}

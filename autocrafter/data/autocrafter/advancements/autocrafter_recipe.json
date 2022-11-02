@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "Unlocked": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "autocrafter:autocrafter"
+            }
+        }
+    },
+    "rewards": {
+        "function": "autocrafter:give_spawn_egg"
+    }
+}

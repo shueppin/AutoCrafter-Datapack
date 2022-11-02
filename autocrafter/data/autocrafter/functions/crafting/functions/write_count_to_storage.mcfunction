@@ -1,0 +1,9 @@
+execute if score @s testing_slot matches 0 store result storage autocrafter:crafting slots.0 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 1 store result storage autocrafter:crafting slots.1 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 2 store result storage autocrafter:crafting slots.2 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 3 store result storage autocrafter:crafting slots.3 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 4 store result storage autocrafter:crafting slots.4 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 5 store result storage autocrafter:crafting slots.5 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 6 store result storage autocrafter:crafting slots.6 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 7 store result storage autocrafter:crafting slots.7 int 1 run scoreboard players get @s testing_count
+execute if score @s testing_slot matches 8 store result storage autocrafter:crafting slots.8 int 1 run scoreboard players get @s testing_count
