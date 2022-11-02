@@ -1,9 +1,14 @@
 # AutoCrafter
 
-This is a minecraft datapack which creates a block, that automatically crafts certain items.  
-The item that should be crafted can be inserted in a simple GUI. the ingredients for the item can be put into the autocrafter block using a hopper. The output item can   be taken out of the autocrafter using a hopper or a hopper minecart
+This is a minecraft datapack which creates a block, that automatically crafts a selected item.  
+This is for Minecraft Java Edition and it can be used in every gamemode without turning on cheats.
 
-At the moment it isn't possible to craft every item. More items will be added somewhen. It is also possible to add <a href='https://github.com/shueppin/AutoCrafter-Datapack#how-to-add-your-own-recipes'>your own crafting recipes</a>. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
+**Content**
+- <a href='#installation'>Install the AutoCrafter</a>
+- <a href='#use-the-autocrafter'>How to use the AutoCrafter</a>
+- <a href='#add-a-crafting-recipe'>How to add your own crafting recipes to the AutoCrafter</a>
+
+*Note:* At the moment it isn't possible to craft every item. More items will be added somewhen. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
 
 
 
@@ -14,11 +19,11 @@ Click on `Code` and then `Download ZIP`. Open this ZIP file and put the director
 
 
 
-# How to get the autocrafter
+# Use the AutoCrafter
 
 Put a `crafting table`, a `dropper` and a `chest` into the crafting slots of your inventory or a crafting table.  
 As a result you should get a green book (called knowledge book). Then this will automatically be replaced with a Spawn egg for the AutoCrafter.  
-Place this spawn egg, where you want your AutoCrafter to be. Note: the autocrafter is 2 blocks tall and 1 by 1 block wide.
+Place this spawn egg, where you want your AutoCrafter to be. Note: the AutoCrafter is 2 blocks tall and 1 by 1 block wide.
 
 You can configure the AutoCrafter by sneaking and rightclicking on the chest of the AutoCrafter.  
 Then an inventory will open, in which you can put the item, it should craft into the top slot.  
@@ -30,19 +35,19 @@ The output can then be collected from the chest (the bottom block of the AutoCra
 
 
 
-# How to add your own recipes
+# Add a crafting recipe
 
-At first download the datapack.
+First, download the datapack.
 
 <br/>
 
-**Creation of the recipe file**
+**Creation of the crafting recipe file**
 
 1. Go to `AutoCrafter/data/autocrafter/functions/crafting/templates`.  
-2. Count the number of different input materials (items) your recipe needs.  
+2. Count the number of different input materials (items) your crafting recipe needs.  
 3. Copy the needed template. (For example if you have 2 different materials, then use the file `template_for_2_materials.mcfunction`)
 
-It should look someting like this (this is the template of the recipe wihich uses only one material):
+It should look someting like this (this is the template of the crafting recipe which uses only one material):
 
 ```mcfunction
 scoreboard players set @s material_1_count_needed input_count_#
@@ -68,7 +73,7 @@ function autocrafter:crafting/functions/material_1/craft_item_with_1_material
 - Replace the `output_count` with the number of items it should craft.  
   Attention: It is very important to add a `b` after the number.
 
-At the end it should look something like this (Here it is the recipe of the goldblock, therefore it uses only one material.):
+At the end it should look something like this (Here it is the crafting recipe of the goldblock, therefore it uses only one material.):
 
 ```mcfunction
 scoreboard players set @s material_1_count_needed 9
@@ -81,7 +86,7 @@ data modify storage autocrafter:crafting output_material set value {id:"minecraf
 function autocrafter:crafting/functions/material_1/craft_item_with_1_material
 ```
 
-*Note for recipes using items from mods*  
+*Note for crafting recipes using items from mods*  
 Instead of the `minecraft:` in front of the item names the name of the mod should be added instead: `modname:input_item_#`
 
 <br/>
@@ -100,10 +105,10 @@ Instead of the `minecraft:` in front of the item names the name of the mod shoul
 execute if entity @s[nbt={Items:[{Slot:2b, id:"minecraft:output_item"}]}] store success score @s can_craft_item run function autocrafter:crafting/recipes/filename
 ```
 
-3. Replace in the pasted line `minecraft:output_item` with the exact name of the output item of the created recipe.  
+3. Replace in the pasted line `minecraft:output_item` with the exact name of the output item of the created crafting recipe.  
    Attention: The `minecraft:` in front of the item name is very important!
 
-4. Replace in the pasted line `filename` with the filename of the created recipe. This should be the output item name.  
+4. Replace in the pasted line `filename` with the filename of the created crafting recipe. This should be the output item name.  
    Attention: Do *not* put the suffix `.mcfunction` there.
 
 At the end it should look something like this:
