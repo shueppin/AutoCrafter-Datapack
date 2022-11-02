@@ -3,8 +3,7 @@
 This is a minecraft datapack which creates a block, that automatically crafts certain items.  
 The item that should be crafted can be inserted in a simple GUI. the ingredients for the item can be put into the autocrafter block using a hopper. The output item can   be taken out of the autocrafter using a hopper or a hopper minecart
 
-At the moment it isn't possible to craft every item. More items will be added somewhen. It is also possible to add <a href='https://github.com/shueppin/AutoCrafter-Datapack#how-to-add-your-own-recipes'>your own crafting recipes</a>.  
-Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
+At the moment it isn't possible to craft every item. More items will be added somewhen. It is also possible to add <a href='https://github.com/shueppin/AutoCrafter-Datapack#how-to-add-your-own-recipes'>your own crafting recipes</a>. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
 
 
 
@@ -23,7 +22,7 @@ Place this spawn egg, where you want your AutoCrafter to be. Note: the autocraft
 
 You can configure the AutoCrafter by sneaking and rightclicking on the chest of the AutoCrafter.  
 Then an inventory will open, in which you can put the item, it should craft into the top slot.  
-It will then tell you, if that item is craftable or not (Open the file `AutoCrafter/craftable_items` in your datapack or go <a href='https://github.com/shueppin/AutoCrafter-Datapack/blob/master/autocrafter/craftable_items.txt'>here</a> to see a list of all craftable items.)
+It will then tell you, if that item is craftable or not (Open the file `AutoCrafter/craftable_items` in your datapack or go <a href='AutoCrafter/craftable_items.txt'>here</a> to see a list of all craftable items.)
 
 The input materials can then be put into the dropper (the top block of the AutoCrafter) using hoppers or by hand.  
 The output can then be collected from the chest (the bottom block of the AutoCrafter) using a hopper or a hopper minecart, but not by hand.  
