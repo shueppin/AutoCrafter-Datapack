@@ -19,8 +19,17 @@ execute if entity @s[nbt={Items:[{Slot:4b, id:"minecraft:green_wool", tag:{displ
 execute if entity @s[nbt={Items:[{Slot:4b, id:"minecraft:gray_wool", tag:{display:{Name:'{"text":"Insert item", "italic":false, "color":"gray"}'}}}]}] run scoreboard players set @s can_replace_llama_bottom_slot 1
 
 
-# Check for every item if it's possible to craft and if it's possible then try to craft this item
+# The scoreboard can_craft_item is set to 0 if THERE IS AN ITEM and afterwards in the next step it is set to 1 if the item can be crafted
+execute as @s if entity @s[nbt={Items:[{Slot:2b}]}] run scoreboard players set @s can_craft_item 0
+
+# Reset the storage "output_material", so that the success for "can_craft_item" will be one
+data remove storage autocrafter:crafting output_material
+
+# Check for every item if it's possible to craft it in this autocrafter and if yes then set the materials
 execute as @s at @s run function autocrafter:get_item_to_craft
+
+# Run the function which crafts the items
+execute if score @s can_craft_item matches 1 run function autocrafter:crafting/functions/craft_item
 
 
 # Place the blocks in the bottom slot
