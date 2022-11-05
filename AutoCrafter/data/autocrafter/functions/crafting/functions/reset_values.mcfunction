@@ -9,6 +9,11 @@ scoreboard players set @s material_2_count 0
 scoreboard players set @s enough_material_2 0
 
 
+
+### For the new crafting function 
+
+
+
 # Reset storage
 data remove storage autocrafter:crafting slots
 data remove storage autocrafter:crafting new_item_count

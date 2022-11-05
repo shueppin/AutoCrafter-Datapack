@@ -1,4 +1,5 @@
 # Sets "testing_count" to the number which is stored in the dictinary with the key "testing_slot"
+# This functions requires the execution of "get_all_item_slots_and_counts" at the beginning 
 
 execute if score @s testing_slot matches 0 store result score @s testing_count run data get storage autocrafter:crafting slots.0
 execute if score @s testing_slot matches 1 store result score @s testing_count run data get storage autocrafter:crafting slots.1

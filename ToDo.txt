@@ -1,5 +1,12 @@
 AutoCrafter
 
+Todo in Files:
+- remove_items_from_all_slots
+- calculate_all_new_item_counts
+- set_new_item_count
+
+
+ToDo:
 - evtl. schedule in tick entfernen und dafür tick.json machen (wie bei anderen datapacks)
 - Zeitabstand des Effekts fürs lama von 10s auf 5-7s kürzen
 - Bei Rechtsklick aufs lama Daten in den Chat schreiben:
