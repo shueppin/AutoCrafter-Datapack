@@ -3,12 +3,16 @@
 This is a minecraft datapack which creates a block, that automatically crafts a selected item.  
 This is for Minecraft Java Edition and it can be used in every gamemode without turning on cheats.
 
+The AutoCrafter is very useful for an automated farm.
+
+
+*Note:* At the moment it isn't possible to craft every item. More items will be added somewhen. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
+
+
 **Content**
 - <a href='#installation'>Install the AutoCrafter</a>
 - <a href='#use-the-autocrafter'>How to use the AutoCrafter</a>
 - <a href='#add-a-crafting-recipe'>How to add your own crafting recipes to the AutoCrafter</a>
-
-*Note:* At the moment it isn't possible to craft every item. More items will be added somewhen. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
 
 
 
@@ -45,7 +49,7 @@ First, download the datapack.
 
 1. Go to `AutoCrafter/data/autocrafter/functions/crafting/templates`.  
 2. Count the number of different input materials (items) your crafting recipe needs.  
-3. Copy the needed template. (For example if you have 2 different materials, then use the file `template_for_2_materials.mcfunction`)
+3. Copy the needed template. (For example if you have 2 different materials, then use the file `template_for_2_materials.txt`)
 
 It should look someting like this (this is the template of the crafting recipe which uses only one material):
 
@@ -55,9 +59,6 @@ data modify storage autocrafter:crafting material_1_id set value "minecraft:inpu
 
 
 data modify storage autocrafter:crafting output_material set value {id:"minecraft:output_item", Count:output_count}
-
-
-function autocrafter:crafting/functions/material_1/craft_item_with_1_material
 ```
 
 4. Replace the following things: 
@@ -99,7 +100,7 @@ Instead of the `minecraft:` in front of the item names the name of the mod shoul
 **Adding the file to the AutoCrafter**
 
 1. Open the file `AutoCrafter/data/autocrafter/functions/get_item_to_craft.mcfunction`.
-2. Copy the following line into the opened file. It is recommended to put the line into the area marked with `/----------\` and `\----------/`. In the file is also a comment to see where to put the line (the comment is marked with an arrow).
+2. Copy the following line into the opened file.
 
 ```mcfunction
 execute if entity @s[nbt={Items:[{Slot:2b, id:"minecraft:output_item"}]}] store success score @s can_craft_item run function autocrafter:crafting/recipes/filename

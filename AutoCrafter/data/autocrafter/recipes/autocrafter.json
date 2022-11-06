@@ -1,20 +1,18 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "D",
-        "T",
-        "C"
-    ],
-    "key": {
-        "T": {
-            "item": "minecraft:crafting_table"
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item":"minecraft:dropper"
         },
-        "D": {
-            "item": "minecraft:dropper"
+        {
+            "item":"minecraft:crafting_table"
         },
-        "C": {
-            "item": "minecraft:chest"
+        {
+            "item":"minecraft:chest"
         }
-    },
-    "result": {"item": "minecraft:knowledge_book"}
+    ],
+    "result": {
+        "item":"minecraft:knowledge_book"
+    }
 }
+

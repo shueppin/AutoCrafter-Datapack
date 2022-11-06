@@ -1,0 +1,5 @@
+scoreboard players set @s material_1_count_needed input_count_#
+data modify storage autocrafter:crafting material_1_id set value "minecraft:input_item_#"
+
+
+data modify storage autocrafter:crafting output_material set value {id:"minecraft:output_item", Count:output_count}
