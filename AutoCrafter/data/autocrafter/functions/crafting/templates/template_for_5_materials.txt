@@ -1,0 +1,21 @@
+scoreboard players set @s material_1_count_needed input_count_1
+data modify storage autocrafter:crafting material_1_id set value "minecraft:input_item_1"
+
+
+scoreboard players set @s material_2_count_needed input_count_2
+data modify storage autocrafter:crafting material_2_id set value "minecraft:input_item_2"
+
+
+scoreboard players set @s material_3_count_needed input_count_3
+data modify storage autocrafter:crafting material_3_id set value "minecraft:input_item_3"
+
+
+scoreboard players set @s material_4_count_needed input_count_4
+data modify storage autocrafter:crafting material_4_id set value "minecraft:input_item_4"
+
+
+scoreboard players set @s material_5_count_needed input_count_5
+data modify storage autocrafter:crafting material_5_id set value "minecraft:input_item_5"
+
+
+data modify storage autocrafter:crafting output_material set value {id:"minecraft:output_item", Count:output_count}

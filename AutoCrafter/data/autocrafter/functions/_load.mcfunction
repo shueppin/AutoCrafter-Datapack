@@ -9,24 +9,23 @@ scoreboard objectives add slot_number_of_item dummy
 scoreboard objectives add could_place_item dummy
 scoreboard objectives add different_item dummy
 
-
-### For the new crafting function
+# For the new crafting function
 scoreboard objectives add count_of_needed_items dummy
 scoreboard objectives add total_number_of_items dummy
 scoreboard objectives add enough_material dummy
 
 
-
 # Scores for every material for crafting
 scoreboard objectives add material_1_count_needed dummy
-scoreboard objectives add material_1_count dummy
-scoreboard objectives add enough_material_1 dummy
-
 scoreboard objectives add material_2_count_needed dummy
-scoreboard objectives add material_2_count dummy
-scoreboard objectives add enough_material_2 dummy
+scoreboard objectives add material_3_count_needed dummy
+scoreboard objectives add material_4_count_needed dummy
+scoreboard objectives add material_5_count_needed dummy
+scoreboard objectives add material_6_count_needed dummy
+scoreboard objectives add material_7_count_needed dummy
+scoreboard objectives add material_8_count_needed dummy
+scoreboard objectives add material_9_count_needed dummy
 
-scoreboard objectives add enough_of_all_material dummy
 
 
 # Other Scores

@@ -19,6 +19,7 @@ execute if entity @s[nbt={Items:[{Slot:4b, id:"minecraft:green_wool", tag:{displ
 execute if entity @s[nbt={Items:[{Slot:4b, id:"minecraft:gray_wool", tag:{display:{Name:'{"text":"Insert item", "italic":false, "color":"gray"}'}}}]}] run scoreboard players set @s can_replace_llama_bottom_slot 1
 
 
+# This is to set the crafting ingredients for the selected recipe
 # The scoreboard can_craft_item is set to 0 if THERE IS AN ITEM and afterwards in the next step it is set to 1 if the item can be crafted
 execute as @s if entity @s[nbt={Items:[{Slot:2b}]}] run scoreboard players set @s can_craft_item 0
 
