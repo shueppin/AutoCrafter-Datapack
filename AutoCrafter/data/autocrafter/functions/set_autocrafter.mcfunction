@@ -8,9 +8,9 @@ summon minecraft:armor_stand ~ ~ ~ {Marker:true, Invisible:true, NoGravity:true,
 
 # The hitbox llama
 summon minecraft:llama ~ ~ ~ {ChestedHorse:true, Tame:true, CustomName:'{"text":"AutoCrafter Configure"}', Tags:["AutoCrafter"], Silent:true, NoAI:true, Strength:1, Health:52}
-# , ActiveEffects:[{Id:14b,Amplifier:0b,Duration:2147483647,ShowParticles:false}]
 effect give @e[type=llama, tag=AutoCrafter] resistance 999999 255 true
 effect give @e[type=llama, tag=AutoCrafter] regeneration 999999 255 true
+effect give @e[type=llama, tag=AutoCrafter] invisibility 999999 255 true
 
 
 # The blocks for input and output

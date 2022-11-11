@@ -2,7 +2,7 @@
 advancement revoke @s only autocrafter:autocrafter_recipe
 
 # Remove the knowledge_book
-clear @s minecraft:knowledge_book
+clear @s minecraft:bee_spawn_egg 1
 
 # Take the recipe from the player, that the player can get the advancement again any later.
 recipe take @s autocrafter:autocrafter
