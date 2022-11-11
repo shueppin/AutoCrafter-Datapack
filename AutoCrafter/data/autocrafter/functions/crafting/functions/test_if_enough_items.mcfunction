@@ -161,7 +161,7 @@ execute if score @s total_number_of_items < @s count_of_needed_items run scorebo
 
 
 # This is important if there is more than 1 material
-#execute if score @s enough_material_1 matches 1 run scoreboard players set @s enough_of_all_material 1 $Remove$
+#execute if score @s enough_material_1 matches 1 run scoreboard players set @s enough_of_all_material 1
 
 
 # if there are enough items in the dropper and nothing is in the chest 

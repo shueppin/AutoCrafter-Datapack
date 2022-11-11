@@ -20,6 +20,18 @@ execute if entity @s[nbt={Items:[{Slot:4b, id:"minecraft:gray_wool", tag:{displa
 
 
 # This is to set the crafting ingredients for the selected recipe
+# Reset all values of the material ids
+data remove storage autocrafter:crafting material_1_id
+data remove storage autocrafter:crafting material_2_id
+data remove storage autocrafter:crafting material_3_id
+data remove storage autocrafter:crafting material_4_id
+data remove storage autocrafter:crafting material_5_id
+data remove storage autocrafter:crafting material_6_id
+data remove storage autocrafter:crafting material_7_id
+data remove storage autocrafter:crafting material_8_id
+data remove storage autocrafter:crafting material_9_id
+
+
 # The scoreboard can_craft_item is set to 0 if THERE IS AN ITEM and afterwards in the next step it is set to 1 if the item can be crafted
 execute as @s if entity @s[nbt={Items:[{Slot:2b}]}] run scoreboard players set @s can_craft_item 0
 

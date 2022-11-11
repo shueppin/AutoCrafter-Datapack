@@ -7,11 +7,13 @@ function autocrafter:crafting/functions/get_count_of_item_at_slot
 
 # Set "new_number_of_items" to the actual number and then subtract the number of items needed and save this in the storage for the function "set_new_item_count"
 scoreboard players operation @s new_number_of_items = @s testing_count
-execute store result storage autocrafter:crafting new_item_count int 1 run scoreboard players operation @s new_number_of_items -= @s count_of_needed_items
+execute store result storage autocrafter:crafting new_item_count byte 1 run scoreboard players operation @s new_number_of_items -= @s count_of_needed_items
 
 function autocrafter:crafting/functions/set_new_item_count
 
-# This is to set "count_of_needed_items" to the actual count of items that are needed (now some already got removed from the originsl count)
+# This is to set "count_of_needed_items" to the actual count of items that are needed (now some already got removed from the original count)
 scoreboard players operation @s calculating_material_count_needed = @s count_of_needed_items
 scoreboard players operation @s calculating_material_count_needed += @s new_number_of_items
 scoreboard players operation @s count_of_needed_items -= @s calculating_material_count_needed
+
+execute unless score @s count_of_needed_items matches 0.. run scoreboard players set @s count_of_needed_items 0
