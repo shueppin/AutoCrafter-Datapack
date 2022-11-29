@@ -6,7 +6,7 @@ This is for Minecraft Java Edition and it can be used in every gamemode without 
 The AutoCrafter is very useful for an automated farm.
 
 
-*Note:* At the moment it isn't possible to craft every item. More items will be added somewhen. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
+*Note:* At the moment it isn't possible to craft every item. More items will be added. Go <a href='AutoCrafter/craftable_items.txt'>here</a> for a list of all craftable items.
 
 
 **Content**
