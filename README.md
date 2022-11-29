@@ -11,23 +11,24 @@ The AutoCrafter is very useful for an automated farm.
 
 **Content**
 - <a href='#installation'>Install the AutoCrafter</a>
-- <a href='#use-the-autocrafter'>How to use the AutoCrafter</a>
+- <a href='#using-the-autocrafter'>How to use the AutoCrafter</a>
 - <a href='#add-a-crafting-recipe'>How to add your own crafting recipes to the AutoCrafter</a>
 
 
 
 # Installation
 
-Click on `Code` and then `Download ZIP`. Open this ZIP file and put the directory `AutoCrafter` into the datapacks folder of your minecraft world. 
+Click on "<a href='https://github.com/shueppin/AutoCrafter-Datapack/releases'>Releases</a>" and then open the latest release. Download the "AutoCrafter-1.x-v.x.x.zip" using the link "Download Datapack".  
+Open this ZIP file and put the downloaded ZIP-File into the datapacks folder of your minecraft world. 
 <a href='https://minecraft.fandom.com/wiki/Tutorials/Installing_a_data_pack'>Tutorial for installing a datapack</a>
 
 
 
-# Use the AutoCrafter
+# Using the AutoCrafter
 
 Put a `crafting table`, a `dropper` and a `chest` into the crafting slots of your inventory or a crafting table.  
-As a result you should get a green book (called knowledge book). Then this will automatically be replaced with a Spawn egg for the AutoCrafter.  
-Place this spawn egg, where you want your AutoCrafter to be. Note: the AutoCrafter is 2 blocks tall and 1 by 1 block wide.
+As a result you will get a spawn egg.  
+Place this spawn egg, where you want your AutoCrafter to be. Note: the AutoCrafter is 2 blocks tall and 1 by 1 block wide. It can't be placed on slabs or other blocks which are smaller than a full block.
 
 You can configure the AutoCrafter by sneaking and rightclicking on the chest of the AutoCrafter.  
 Then an inventory will open, in which you can put the item, it should craft into the top slot.  
